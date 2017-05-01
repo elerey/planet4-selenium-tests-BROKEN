@@ -1,0 +1,10 @@
+2017-04-24 11:42:23,726 [Worker-1] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is not available. Remote download required.
+2017-04-24 11:44:35,849 [Worker-1] WARN  org.eclipse.jgit.util.FS - Exception caught during execution of command '[git, config, --system, --edit]' in '/usr/bin', return code '128', error message 'fatal: Could not switch to '/Applications/Xcode.app/Contents/Developer/usr/etc/': No such file or directory
+'
+2017-04-24 11:49:59,095 [Start Help Server] INFO  org.eclipse.jetty.util.log - Logging initialized @809440ms
+2017-04-24 11:49:59,337 [Start Help Server] INFO  org.eclipse.jetty.server.Server - jetty-9.3.9.v20160517
+2017-04-24 11:49:59,419 [Start Help Server] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@41771b07{/help,null,AVAILABLE}
+2017-04-24 11:49:59,450 [Start Help Server] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@284d8872{HTTP/1.1,[http/1.1]}{127.0.0.1:51201}
+2017-04-24 11:49:59,452 [Start Help Server] INFO  org.eclipse.jetty.server.Server - Started @809798ms
+2017-04-24 21:27:59,438 [Stop Help Server] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@284d8872{HTTP/1.1,[http/1.1]}{127.0.0.1:0}
+2017-04-24 21:27:59,490 [Stop Help Server] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@41771b07{/help,null,UNAVAILABLE}
