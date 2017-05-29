@@ -27,17 +27,17 @@ Step by step build
 
 *   Download and run that file
 
-    java -jar selenium-server-standalone-#.jar
+        java -jar selenium-server-standalone-#.jar
 
 *   You can also run it on a remote host, you will need to set it up as a grid/node by running two instances
 
-    java -jar selenium-server-standalone-2.53.1.jar -role hub
-    java -jar selenium-server-standalone-2.53.1.jar -role node
+        java -jar selenium-server-standalone-2.53.1.jar -role hub
+        java -jar selenium-server-standalone-2.53.1.jar -role node
 
 *   Then when you create a session, be sure to pass the url to where your server is running.
 
     // This would be the url of the host running the server-standalone.jar
-    $host = 'http://localhost:4444/wd/hub'; // this is the default
+       $host = 'http://localhost:4444/wd/hub'; // this is the default
 
 *   Make sure you have firefox installed on your selenium host!
 
@@ -46,23 +46,23 @@ Step by step build
 
 *   You can download PHPunit using your local package manager (apt-get, yum, brew, etc), for example
 
-    apt-get phpunit
+        apt-get phpunit
 
 *   If you don't want to use your local package manager you can download the composer.phar
 
-    curl -sS https://getcomposer.org/installer | php
+        curl -sS https://getcomposer.org/installer | php
 
 *   Install the library.
 
-    php composer.phar install
+        php composer.phar install
 
 *   To run unit tests then simply run:
 
-    vendor/bin/phpunit tests/sample/AN_changedomain.php;
+        vendor/bin/phpunit tests/sample/AN_changedomain.php;
 
 * A bash script has been created to run all tests and can be run as follows (currently only runs 1 test)
 
-    $ ./run_sampletest.sh
+        $ ./run_sampletest.sh
 
 
 About Facebook php-webdriver
