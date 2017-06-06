@@ -1,18 +1,20 @@
 <?php
+
 class P3_AN_Test extends PHPUnit_Framework_TestCase {
 
     /**
      * @var \RemoteWebDriver
      */
+    
     protected $webDriver;
 
 	public function setUp()
     {
-        $capabilities = array(\WebDriverCapabilityType::BROWSER_NAME => 'firefox');
-        $this->webDriver = RemoteWebDriver::create('http://localhost:4444/wd/hub', $capabilities);
-    }
 
-    protected $url = 'http://www.greenpeace.org/international/en/about/jobs/';
+        $configs = include('./config/config.php');
+        $capabilities = array(\WebDriverCapabilityType::BROWSER_NAME => $configs['browser']);
+        $this->webDriver = RemoteWebDriver::create($configs['host'], $capabilities);
+    }
 
     /*public function testHomepage()
     {
@@ -24,7 +26,8 @@ class P3_AN_Test extends PHPUnit_Framework_TestCase {
 
     public function testchangeDomain()
     {
-        $this->webDriver->get($this->url);
+        $configs = include('./config/config.php');
+        $this->webDriver->get($configs['url']);
         // find search field by its id
         $search = $this->webDriver->findElement(WebDriverBy::xpath('/html/body/form/div[3]/div[2]/div[1]/div[1]/fieldset/div/a'));
         $search->click();
